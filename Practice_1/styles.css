@@ -1,0 +1,18 @@
+.b1 {
+  color: black;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background-color: rgb(141, 246, 141);
+  border-radius: 15px;
+  padding: 10px;
+}
+.b2 {
+  color: black;
+  background-color: rgb(236, 233, 233);
+  border: 3px solid black;
+  padding: 8px;
+  border-radius: 10px;
+  width: 200px;
+  align-items: center;
+}

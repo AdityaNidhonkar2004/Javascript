@@ -5,31 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practice Set</title>
     <script src="scripts/index.js"></script>
-    <style>
-      .b1 {
-        color: black;
-        border: none;
-        font-size: 0.8rem;
-        font-weight: 700;
-        background-color: rgb(117, 138, 117);
-        border-radius: 15px;
-        padding: 10px;
-      }
-      .b2 {
-        color: black;
-        background-color: white;
-        border: 3px solid rgb(154, 45, 45);
-        padding: 8px;
-        border-radius: 10px;
-        width: 200px;
-        align-items: center;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <button class="b1">Add To Bag</button>
-      <button class="b2">WISHLIST</button>
+      <button
+        class="b1"
+        onclick="cartQuantity+=1;document.querySelector('#cart-summary').innerText=`Your bag has ${cartQuantity} items`;"
+      >
+        Add to Bag
+      </button>
+      <button
+        class="b2"
+        onclick="cartQuantity-=1;document.querySelector('#cart-summary').innerText=`Your bag has ${cartQuantity} items`;"
+      >
+        MOVE TO WISHLIST
+      </button>
+      <button
+        class="b3 b1"
+        onclick="cartQuantity+=2;document.querySelector('#cart-summary').innerText=`Your bag has ${cartQuantity} items`;"
+      >
+        Add 1+1 sale item
+      </button>
+      <h1 id="cart-summary">Your bag has 0 items</h1>
     </header>
+    <script>
+      let cartQuantity = 0;
+      document.querySelector(
+        "#cart-summary"
+      ).innerText = `Your bag has ${cartQuantity} items`;
+    </script>
   </body>
 </html>
