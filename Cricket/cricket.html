@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="cricketstyles.css" />
+  </head>
+  <h1>Bat Ball Stump Game</h1>
+  <body>
+    <button
+      onclick="let randomNumber=Math.random()*3;
+    let computerChoice;
+    if(randomNumber>0 && randomNumber <=1){
+      computerChoice='Bat';
+    }
+    else if(randomNumber>1 && randomNumber <=2){
+      computerChoice='Ball';
+    }
+    else{
+      computerChoice='Stump';
+    }
+    let resultMsg;
+    if(computerChoice==='Bat'){
+      resultMsg='TIE';
+    }
+    else if(computerChoice==='Ball'){
+      resultMsg='YOU WIN';
+    }
+    else if (computerChoice==='Stump'){
+      resultMsg='YOU LOSE';
+    }
+alert(`${resultMsg} and Computer choice was: ${computerChoice}`);
+    "
+    >
+      Bat
+    </button>
+    <button
+      onclick="randomNumber=Math.random()*3;
+    if(randomNumber>0 && randomNumber <=1){
+      computerChoice='Bat';
+    }
+    else if(randomNumber>1 && randomNumber <=2){
+      computerChoice='Ball';
+    }
+    else{
+      computerChoice='Stump';
+    }
+    if(computerChoice==='Bat'){
+      resultMsg='YOU LOSE';
+    }
+    else if(computerChoice==='Ball'){
+      resultMsg='TIE';
+    }
+    else if (computerChoice==='Stump'){
+      resultMsg='YOU WIN';
+    }
+alert(`${resultMsg} and Computer choice was: ${computerChoice}`);
+    "
+    >
+      Ball
+    </button>
+    <button
+      onclick="randomNumber=Math.random()*3;
+    if(randomNumber>0 && randomNumber <=1){
+      computerChoice='Bat';
+    }
+    else if(randomNumber>1 && randomNumber <=2){
+      computerChoice='Ball';
+    }
+    else{
+      computerChoice='Stump';
+    }
+
+    if(computerChoice==='Bat'){
+      resultMsg='YOU WIN';
+    }
+    else if(computerChoice==='Ball'){
+      resultMsg='YOU LOSE';
+    }
+    else if (computerChoice==='Stump'){
+      resultMsg='TIE';
+    }
+alert(`${resultMsg} and Computer choice was: ${computerChoice}`);
+    "
+    >
+      Stump
+    </button>
+  </body>
+</html>
