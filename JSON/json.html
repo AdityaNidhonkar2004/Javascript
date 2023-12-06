@@ -1,0 +1,36 @@
+<!-- json-javascript object notation -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>json</title>
+  </head>
+  <body>
+    <script>
+      let product = {
+        name: "TShirt",
+        price: 789,
+        rating: {
+          stars: 4.5,
+          reviews: 456,
+        },
+      };
+      console.log(product);
+      console.log(typeof product);
+      //Object to string
+      let str = JSON.stringify(product);
+      console.log(str);
+      console.log(typeof str);
+
+      //String to object
+      let newProduct = JSON.parse(str);
+      console.log(typeof str);
+      console.log(newProduct);
+      console.log(typeof newProduct);
+      // localStorage.setItem(key,value)
+      // it get stored in console-application-localmemory
+      localStorage.setItem("Name", "Aditya");
+      localStorage.setItem("id", "1223afc");
+      console.log(localStorage.getItem("Name"));
+    </script>
+  </body>
+</html>
